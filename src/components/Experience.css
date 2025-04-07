@@ -1,0 +1,319 @@
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.dark-mode .experience-title {
+  color: #ffffff;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+.job-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .job-card {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .job-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.job-header {
+  margin-bottom: 1.5rem;
+}
+
+.job-title-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.dark-mode .job-title {
+  color: #ffffff;
+}
+
+.job-company {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.dark-mode .job-company {
+  color: #999;
+}
+
+.job-period {
+  font-size: 1rem;
+  color: #888;
+  font-style: italic;
+}
+
+.dark-mode .job-period {
+  color: #777;
+}
+
+.job-description {
+  margin-bottom: 1.5rem;
+  color: #444;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.dark-mode .job-description {
+  color: #bbb;
+}
+
+.job-skills {
+  margin-top: 1.5rem;
+}
+
+.job-skills h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.dark-mode .job-skills h4 {
+  color: #ffffff;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .skill-tag {
+  background-color: #3a3a3a;
+  color: #ffffff;
+}
+
+.skill-tag:hover {
+  background-color: #e0e0e0;
+}
+
+.dark-mode .skill-tag:hover {
+  background-color: #4a4a4a;
+}
+
+.job-description-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.dark-mode .job-description-list {
+  color: #bbb;
+}
+
+.job-description-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.job-description-list li:last-child {
+  margin-bottom: 0;
+}
+
+.promotion-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(0, 200, 83, 0.1);
+  border-radius: 6px;
+  width: fit-content;
+  animation: slideIn 0.5s ease-out;
+}
+
+.dark-mode .promotion-indicator {
+  background-color: rgba(0, 200, 83, 0.2);
+}
+
+.promotion-arrow {
+  font-size: 1rem;
+  color: #00c853;
+  animation: bounce 2s infinite;
+}
+
+.promotion-info {
+  display: flex;
+  align-items: center;
+  color: #00c853;
+  font-weight: 500;
+}
+
+.promotion-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-3px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .experience-container {
+    padding: 1.5rem;
+  }
+
+  .experience-title {
+    font-size: 2rem;
+  }
+
+  .job-card {
+    padding: 1.5rem;
+  }
+
+  .job-title-container {
+    gap: 0.75rem;
+  }
+
+  .job-title {
+    font-size: 1.5rem;
+  }
+
+  .job-company {
+    font-size: 1.2rem;
+  }
+
+  .job-description {
+    font-size: 1rem;
+  }
+
+  .job-description-list li {
+    font-size: 1rem;
+  }
+
+  .promotion-indicator {
+    padding: 0.2rem 0.4rem;
+  }
+
+  .promotion-arrow {
+    font-size: 0.9rem;
+  }
+
+  .promotion-title {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .experience-container {
+    padding: 1rem;
+  }
+
+  .experience-title {
+    font-size: 1.75rem;
+  }
+
+  .job-card {
+    padding: 1.25rem;
+  }
+
+  .job-title-container {
+    gap: 0.5rem;
+  }
+
+  .job-title {
+    font-size: 1.3rem;
+  }
+
+  .job-company {
+    font-size: 1.1rem;
+  }
+
+  .skill-tag {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .job-description-list {
+    padding-left: 1.25rem;
+  }
+  
+  .job-description-list li {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .promotion-indicator {
+    padding: 0.15rem 0.3rem;
+  }
+
+  .promotion-arrow {
+    font-size: 0.85rem;
+  }
+
+  .promotion-title {
+    font-size: 0.75rem;
+  }
+} 

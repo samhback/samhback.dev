@@ -1,0 +1,128 @@
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem 2rem;
+  width: 100%;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #333;
+}
+
+.dark-mode .contact-title {
+  color: #ffffff;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-item {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .contact-item {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .contact-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.dark-mode .contact-item h2 {
+  color: #ffffff;
+}
+
+.contact-item p,
+.contact-item a {
+  font-size: 1.2rem;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.dark-mode .contact-item p,
+.dark-mode .contact-item a {
+  color: #999;
+}
+
+.contact-item a:hover {
+  color: #333;
+}
+
+.dark-mode .contact-item a:hover {
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-item {
+    padding: 1.5rem;
+  }
+
+  .contact-item h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-item p,
+  .contact-item a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-container {
+    padding: 2.5rem 1rem 1rem 1rem;
+  }
+
+  .contact-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-item {
+    padding: 1.25rem;
+  }
+
+  .contact-item h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-item p,
+  .contact-item a {
+    font-size: 0.9rem;
+  }
+} 
