@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://samhback.github.io/samhback.dev",
+  "homepage": "https://samhback.dev",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
